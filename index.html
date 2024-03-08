@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Formulário</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <!-- Dados do usuário -->
+  <label for="fnome" class="radio">Qual é o seu Nome</label>
+  <p><input type="text" maxlenght="20" class="nome"></p>
+
+  <label for="fcnpj" class="radio">Qual é o seu CPF/CNPJ</label>
+  <p><input type="integer" maxlenght="20" class="cnpj"></p>
+
+  <label for="femail" class="radio">Qual é o seu Email</label>
+  <p><input type="text" maxlenght="30" class="email"></p>
+
+  <label for="fPROBLU" class="radio"> Você possui PROBLU </label>
+  <BR></BR> 
+    <input type="radio" name="PROBLU">
+    <label for="fPROBLU" class="checkbox">SIM</label>
+    <input type="radio" name="PROBLU">
+    <label for="fPROBLU" class="checkbox">NÃO</label>
+ 
+
+
+  <!--Ocupação-->
+  <p><label for="ocupação" class="radio">Qual a sua ocupação? </p></label>
+  <input type="radio" idocupacao="1" name="ocupação" value="Mareceneiro">
+  <label for="Mareceneiro" class="checkbox">Eu sou Mareceneiro</label>
+  <br>
+  <input type="radio" idocupacao="2" name="ocupação" value="Expositor">
+  <label for="Expositor" class="checkbox"> Eu sou Expositor</label>
+  <br>
+  <input type="radio" idocupacao="3" name="ocupação" value="Visitante">
+  <label for="Visitante" class="checkbox"> Eu sou Visitante</label>
+  <br>
+  <input type="radio" idocupacao="4" name="ocupação" value="Designer">
+  <label for="Designer" class="checkbox"> Eu sou Designer</label>
+  <br>
+  <input type="radio" idocupacao="5" name="ocupação" value="Arquiteto">
+  <label for="Arquiteto" class="checkbox"> Eu sou Mareceneiro</label>
+  <br><br>
+  </div>
+  <!-- ainda faltou colocar a opção outros mais tenho que pensar como iremos ultilizada-->
+
+  <!--Convite-->
+
+  <label for="convite" class="radio"> Quem foi a pessoa que fez o convite para você compartilhar a expeirência da EXPO conocsco?<br></label>
+  <p><input type="text" maxlenght="20" class="nome">  
+
+  <p><label for="Local" class="radio">Qual foi o local em que foi feito o convite para EXPO</label></p>
+
+  <form>
+    <input list="browsers" class="filiais">
+    <datalist id="browsers">
+      <option value="Santa Felicidade">
+      <option value="Boqueirão">
+      <option value="Fazenda Rio Grande">
+      <option value="Rafex">
+      <option value="Centro de Serviço Rugon">
+      <option value="A Mauqina Certa (AMC)"></option>
+    </datalist>
+  </form>
+  <br>
+  <!--Botão-->
+
+  <button type="button" class="botao"> Salvar </button>
+
+  <!--links e sites-->
+  <footer>
+    <a href="https://www.rudegon.com.br/" target="_blank"> Site oficial | </a>
+    <a href="https://cortecloud.com.br/" target="_blank">Cortecloud | </a>
+    <a href="https://www.maquinasamc.com.br/" target="_blank"> AMC maquinas</a>
+  </footer>
+</body>
+
+</html>
