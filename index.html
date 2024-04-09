@@ -7,71 +7,63 @@
 </head>
 
 <body>
-  <!-- Dados do usuário -->
-  <label for="fnome" class="radio">Qual é o seu Nome</label>
-  <p><input type="text" maxlenght="20" class="nome"></p>
+  <form action="">
+    <div> <!-- Nome -->
+      <label for="nome" class="radio">Qual é o seu Nome</label>
+      <p><input type="text" maxlenght="20" class="nome" required></p>
+    </div>
 
-  <label for="fcnpj" class="radio">Qual é o seu CPF/CNPJ</label>
-  <p><input type="integer" maxlenght="20" class="cnpj"></p>
+    <div> <!-- CNPJ -->
+      <label for="cnpj" class="radio">Qual é o seu CPF/CNPJ</label>
+      <p><input type="integer" maxlenght="20" class="cnpj" required></p>
+    </div>
 
-  <label for="femail" class="radio">Qual é o seu Email</label>
-  <p><input type="text" maxlenght="30" class="email"></p>
+    <div> <!-- email -->
+      <label for="email" class="radio">Qual é o seu Email</label>
+      <p><input type="text" maxlenght="30" class="email" required></p>
+    </div>
 
-  <label for="fPROBLU" class="radio"> Você possui ProBlue </label>
-  <BR></BR> 
-    <input type="radio" name="PROBLU">
-    <label for="fPROBLU" class="checkbox">SIM</label>
-    <input type="radio" name="PROBLU">
-    <label for="fPROBLU" class="checkbox">NÃO</label>
- 
+    <div class="ProBlu">
+      <p><label for="ocupação" class="radio">Você possui ProBlu?</label></p>
+      <input type="radio" name="ProBlu" value="SIM" ><strong> SIM</strong> 
+      <input type="radio" name="ProBlu" value="NÃO" ><strong> NÃO</strong> 
+    </div>
 
+    <div class="ocupacao"> 
+      <p><label for="ocupação" class="radio">Qual a sua ocupação?</label></p>
+      <input type="radio" idocupacao="1" name="ocupação" value="Mareceneiro" required> Mareceneiro
+      <input type="radio" idocupacao="2" name="ocupação" value="Visitante"> Visitante
+      <input type="radio" idocupacao="3" name="ocupação" value="Designer"> Designer
+      <input type="radio" idocupacao="4" name="ocupação" value="Arquiteto"> Arquiteto
+    </div>
+    <!-- ainda faltou colocar a opção outros mais tenho que pensar como iremos ultilizada-->
 
-  <!--Ocupação-->
-  <p><label for="ocupação" class="radio">Qual a sua ocupação? </p></label>
-  <input type="radio" idocupacao="1" name="ocupação" value="Mareceneiro">
-  <label for="Mareceneiro" class="checkbox">Eu sou Marceneiro</label>
-  <br>
-  <input type="radio" idocupacao="3" name="ocupação" value="Visitante">
-  <label for="Visitante" class="checkbox"> Eu sou Visitante</label>
-  <br>
-  <input type="radio" idocupacao="4" name="ocupação" value="Designer">
-  <label for="Designer" class="checkbox"> Eu sou Designer</label>
-  <br>
-  <input type="radio" idocupacao="5" name="ocupação" value="Arquiteto">
-  <label for="Arquiteto" class="checkbox"> Eu sou Arquiteto</label>
-  <br><br>
-  </div>
-  <!-- ainda faltou colocar a opção outros mais tenho que pensar como iremos ultilizada-->
+    <div> <!-- Local de convite-->
+      <p><label for="Local" class="radio">Qual foi o local em que foi feito o convite para EXPO</label></p>
+      <select class="filiais" name="ocupacao" id="" required>
+        <option value=" A Mauqina Certa (AMC)"> A Mauqina Certa (AMC)</option>
+        <option value=" Boqueirão" selected> Boqueirão</option>
+        <option value=" Centro de Serviço Rudegon"> Centro de Serviço Rudegon</option>
+        <option value=" Fazenda Rio Grande"> Fazenda Rio Grande</option>
+        <option value=" Rafex"> Rafex</option>
+        <option value=" Santa Felicidade"> Santa Felicidade</option>
+      </select>
+    </div>
 
-  <!--Convite-->
+    <div> <!-- Vendedor que fez o convite-->
+      <p><label for="convite" class="radio"> Quem foi a pessoa que fez o convite para você da EXPO ?</label></p>
+    </div>
+    <!-- colocar a opão para quando alguem colocar a filial aparecer somente o nome dos vendedores da filial-->
+    <input type="submit" class="button"><!--Botão-->
 
-  <label for="convite" class="radio"> Quem foi a pessoa que fez o convite para você da EXPO?<br></label>
-  <p><input type="text" maxlenght="20" class="nome">  
-
-  <p><label for="Local" class="radio">Qual foi o local em que foi feito o convite para EXPO</label></p>
-
-  <form>
-    <input list="browsers" class="filiais">
-    <datalist id="browsers">
-      <option value="Santa Felicidade">
-      <option value="Boqueirão">
-      <option value="Fazenda Rio Grande">
-      <option value="Rafex">
-      <option value="Centro de Serviço Rugon">
-      <option value="A Mauqina Certa (AMC)"></option>
-    </datalist>
+    <div> <!--links e sites-->
+      <footer>
+        <a href="https://www.rudegon.com.br/" target="_blank"> Site oficial | </a>
+        <a href="https://cortecloud.com.br/" target="_blank"> Cortecloud | </a>
+        <a href="https://www.maquinasamc.com.br/" target="_blank"> AMC maquinas</a>
+      </footer>
+    </div>
   </form>
-  <br>
-  <!--Botão-->
-
-  <button type="button" class="botao"> Salvar </button>
-
-  <!--links e sites-->
-  <footer>
-    <a href="https://www.rudegon.com.br/" target="_blank"> Site oficial | </a>
-    <a href="https://cortecloud.com.br/" target="_blank">Cortecloud | </a>
-    <a href="https://www.maquinasamc.com.br/" target="_blank"> AMC maquinas</a>
-  </footer>
 </body>
 
 </html>
