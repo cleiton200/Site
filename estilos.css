@@ -5,14 +5,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 * {
-    text-align: center;
+    text-align:center;
 }
-p { 
+
+p {
     padding: 10px;
     color: rgba(12, 12, 12, 0.938);
     font-size: 20px;
 }
+
 .nome {
     text-align: left;
     width: 500px;
@@ -20,64 +23,103 @@ p {
     color: rgb(10, 10, 10);
     font-size: 20px;
 }
+
 .cnpj {
     text-align: left;
     width: 500px;
     height: 35px;
     color: rgb(15, 14, 14);
-    font-size: 20px;
+    font-size: 10px;
 }
+
 .email {
     text-align: left;
     width: 500px;
     height: 35px;
     font-size: 20px;
 }
-.checkbox {
-    margin-top: 10px;
-    text-align: center;
+
+.ProBlu {
+    color: rgb(8, 1, 1);
     font-size: 20px;
-    color:rgb(0, 0, 0);
-    background-color: rgba(247, 247, 248, 0.466);
+    padding: 10px;
 }
+
+.ProBlu input[type="radio"] {
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.ocupacao{
+    color: rgb(8, 1, 1);
+    font-size: 20px;
+}
+
+.ocupacao input[type=radio] {
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+}
+
 .radio {
+    text-align: center;
     border: solid rgb(248, 146, 12);
     border-radius: 5px;
     padding: 10px;
     color: rgb(8, 1, 1);
     background-color: rgba(247, 247, 248, 0.466);
-    font-size: 22px;
-    }
+    font-size: 20px;
+}
+
 
 .filiais {
     text-align: left;
     width: 500px;
     height: 35px;
+    font-size: 20px;
+    cursor: pointer;
 }
+
 a {
     color: rgb(10, 27, 124);
     font-size: 18px;
     background-color: rgba(77, 73, 67, 0.315);
+    text-decoration: none;
+    font-size: 20px;
 }
-footer {
+
+footer{
     margin-top: 50px;
-    position:relative;
+    position: relative;
     text-align: center;
     padding: 30px;
 }
-button {
+
+.button {
     width: 200px;
     border-radius: 50px;
     padding: 20px;
     padding-right: 25px;
     margin: 30px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
 }
-.botao:hover{
+
+.button:hover {
     background-color: rgb(241, 105, 56);
 }
-.botao:active{
+
+.button:active {
     background-color: rgb(55, 55, 252);
 }
 
+.text {
+    margin-top: 60px;
+    border: solid rgb(248, 146, 12);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(247, 247, 248, 0.466);
+    font-size: 25px;
+}
