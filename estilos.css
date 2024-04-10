@@ -1,10 +1,11 @@
+
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(imagens/teste1.jpg);
+    background-image: url(imagens/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
 
 * {
     text-align:center;
@@ -12,8 +13,19 @@ body {
 
 p {
     padding: 10px;
-    color: rgba(12, 12, 12, 0.938);
+    color: rgba(255, 253, 253, 0.938);
     font-size: 20px;
+}
+
+.radio {
+    text-align: center;
+    border: solid  rgb(255, 238, 0);;
+    border-radius: 25px;
+    padding: 10px;
+    color: rgb(8, 31, 245);
+    background-color: rgb(255, 238, 0);
+    font-size: 20px;
+    text-transform: capitalize;
 }
 
 .nome {
@@ -22,14 +34,16 @@ p {
     height: 35px;
     color: rgb(10, 10, 10);
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .cnpj {
     text-align: left;
     width: 500px;
     height: 35px;
-    color: rgb(15, 14, 14);
+    color: rgb(241, 237, 237);
     font-size: 10px;
+    margin-bottom: 40px;
 }
 
 .email {
@@ -37,42 +51,52 @@ p {
     width: 500px;
     height: 35px;
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .ProBlu {
-    color: rgb(8, 1, 1);
+    color: rgb(19, 19, 19);
     font-size: 20px;
+    background-color: rgba(247, 247, 248, 0.466);
+    display: inline-block;
+    vertical-align: middle; 
     padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
 }
 
-.ProBlu input[type="radio"] {
+.ProBlu input[type=radio] {
     width: 18px;
     height: 20px;
     cursor: pointer;
     font-size: 40px;
+    background-color: rgba(247, 247, 248, 0.466);
 }
 
-.ocupacao{
-    color: rgb(8, 1, 1);
+.ocupacao {
+    color: rgb(19, 19, 19);
     font-size: 20px;
+    background-color: rgba(247, 247, 248, 0.466);
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    text-transform: uppercase;
 }
 
 .ocupacao input[type=radio] {
     width: 18px;
     height: 20px;
     cursor: pointer;
+    display: inline-block;
 }
 
-.radio {
-    text-align: center;
-    border: solid rgb(248, 146, 12);
-    border-radius: 5px;
-    padding: 10px;
-    color: rgb(8, 1, 1);
-    background-color: rgba(247, 247, 248, 0.466);
-    font-size: 20px;
+.ocupacao label {
+    vertical-align: text-bottom;
+    cursor: pointer;
+    margin-right: 10px;
 }
-
 
 .filiais {
     text-align: left;
@@ -80,12 +104,13 @@ p {
     height: 35px;
     font-size: 20px;
     cursor: pointer;
+    margin-bottom: 60px;
 }
 
 a {
     color: rgb(10, 27, 124);
     font-size: 18px;
-    background-color: rgba(77, 73, 67, 0.315);
+    background-color: rgba(209, 209, 209, 0.315);
     text-decoration: none;
     font-size: 20px;
 }
@@ -94,7 +119,8 @@ footer{
     margin-top: 50px;
     position: relative;
     text-align: center;
-    padding: 30px;
+    padding-bottom: 0px;
+    
 }
 
 .button {
