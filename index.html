@@ -4,6 +4,8 @@
 <head>
   <title>Formulário</title>
   <link rel="stylesheet" href="estilos.css">
+  
+  
 </head>
 
 <body>
@@ -22,19 +24,21 @@
       <label for="email" class="radio">Qual é o seu Email</label>
       <p><input type="text" maxlenght="30" class="email" required></p>
     </div>
-
-    <div class="ProBlu">
-      <p><label for="ocupação" class="radio">Você possui ProBlu?</label></p>
-      <input type="radio" name="ProBlu" value="SIM" ><strong> SIM</strong> 
-      <input type="radio" name="ProBlu" value="NÃO" ><strong> NÃO</strong> 
+    <div>
+      <p><label for="ocupação" class="radio">Você possui Problu?</label></p>
+      <div class="ProBlu">
+        <input type="radio" name="ProBlu" value="SIM"><strong>SIM</strong>
+        <input type="radio" name="ProBlu" value="NÃO"><strong>NÃO</strong>
+      </div>
     </div>
 
-    <div class="ocupacao"> 
-      <p><label for="ocupação" class="radio">Qual a sua ocupação?</label></p>
-      <input type="radio" idocupacao="1" name="ocupação" value="Mareceneiro" required> Mareceneiro
-      <input type="radio" idocupacao="2" name="ocupação" value="Visitante"> Visitante
-      <input type="radio" idocupacao="3" name="ocupação" value="Designer"> Designer
-      <input type="radio" idocupacao="4" name="ocupação" value="Arquiteto"> Arquiteto
+
+    <p><label for="ocupação" class="radio">Qual a sua ocupação?</label></p>
+    <div class="ocupacao" tesx>
+      <input type="radio" id="ocupacao1" name="ocupação" value="Mareceneiro" required><label for="ocupacao">Mareceneiro</label>
+      <input type="radio" id="ocupacao2" name="ocupação" value="Visitante"><label for="ocupacao">Visitante</label>
+      <input type="radio" id="ocupacao3" name="ocupação" value="Designer"><label for="ocupacao">Designer</label>
+      <input type="radio" id="ocupacao4" name="ocupação" value="Arquiteto"><label for="ocupacao">Arquiteto</label>
     </div>
     <!-- ainda faltou colocar a opção outros mais tenho que pensar como iremos ultilizada-->
 
