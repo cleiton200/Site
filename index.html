@@ -4,28 +4,45 @@
 <head>
   <title>Formulário</title>
   <link rel="stylesheet" href="estilos.css">
-  
-  
+
+
 </head>
 
 <body>
+
+  <h1 class="textoEsquerdo">40 FORNECEDORES, PALESTRAS,<br>
+    TECNICAS, TREINAMENTOS PRÁTICOS,<BR>
+    NETWORKING E MUITO MAIS!
+  </h1>
+
+  <table>
+    
+
+  </table>
+
   <form action="">
     <div> <!-- Nome -->
-      <label for="nome" class="radio">Qual é o seu Nome</label>
-      <p><input type="text" maxlenght="20" class="nome" required></p>
-    </div>
-
-    <div> <!-- CNPJ -->
-      <label for="cnpj" class="radio">Qual é o seu CPF/CNPJ</label>
-      <p><input type="integer" maxlenght="20" class="cnpj" required></p>
+      <label for="nome" class="radio">Qual é o seu Nome?</label>
+      <p><input type="text" maxlenght="20" class="nome" required placeholder="Carlos jamungar"></p>
     </div>
 
     <div> <!-- email -->
-      <label for="email" class="radio">Qual é o seu Email</label>
-      <p><input type="text" maxlenght="30" class="email" required></p>
+      <label for="email" class="radio">Qual é o seu Email?</label>
+      <p><input type="text" maxlenght="30" class="email" required placeholder="Carlosjamungar@gmail.com"></p>
     </div>
-    <div>
-      <p><label for="ocupação" class="radio">Você possui Problu?</label></p>
+
+    <div> <!-- CNPJ -->
+      <label for="cnpj" class="radio">Qual é o seu CPF/CNPJ?</label>
+      <p><input type="integer" maxlenght="20" class="cnpj" required placeholder="000000000"></p>
+    </div>
+
+    <div> <!-- Telefone -->
+      <label for="telefone" class="radio">Qual é o seu telefone?</label>
+      <p><input type="text" maxlenght="30" class="email" required placeholder="(41) 0 0000-0000"></p>
+    </div>
+
+    <div> <!-- Problu-->
+      <p><label for="Problu" class="radio">Você possui Problu?</label></p>
       <div class="ProBlu">
         <input type="radio" name="ProBlu" value="SIM"><strong>SIM</strong>
         <input type="radio" name="ProBlu" value="NÃO"><strong>NÃO</strong>
@@ -34,16 +51,29 @@
 
 
     <p><label for="ocupação" class="radio">Qual a sua ocupação?</label></p>
-    <div class="ocupacao" tesx>
-      <input type="radio" id="ocupacao1" name="ocupação" value="Mareceneiro" required><label for="ocupacao">Mareceneiro</label>
-      <input type="radio" id="ocupacao2" name="ocupação" value="Visitante"><label for="ocupacao">Visitante</label>
-      <input type="radio" id="ocupacao3" name="ocupação" value="Designer"><label for="ocupacao">Designer</label>
-      <input type="radio" id="ocupacao4" name="ocupação" value="Arquiteto"><label for="ocupacao">Arquiteto</label>
+    <div class="ocupacao">
+      <div>
+        <input type="radio" id="1" name="ocupação" value="Mareceneiro" required>
+        <label for="ocupacao">Mareceneiro</label>
+      </div>
+      <div>
+        <input type="radio" id="2" name="ocupação" value="Designer">
+        <label for="ocupacao">Designer</label>
+      </div>
+      <div>
+        <input type="radio" id="3" name="ocupação" value="Arquiteto">
+        <label for="ocupacao">Arquiteto</label>
+      </div>
+      <div>
+        <input type="radio" id="4" name="ocupação" value="Outros">
+        <label for="ocupacao">outros</label>
+      </div>
     </div>
+
     <!-- ainda faltou colocar a opção outros mais tenho que pensar como iremos ultilizada-->
 
     <div> <!-- Local de convite-->
-      <p><label for="Local" class="radio">Qual foi o local em que foi feito o convite para EXPO</label></p>
+      <p><label for="Local" class="radio">Qual foi o local que foi feito o convite ?</label></p>
       <select class="filiais" name="ocupacao" id="" required>
         <option value=" A Mauqina Certa (AMC)"> A Mauqina Certa (AMC)</option>
         <option value=" Boqueirão" selected> Boqueirão</option>
@@ -54,20 +84,25 @@
       </select>
     </div>
 
-    <div> <!-- Vendedor que fez o convite-->
+    <!--<div>  Vendedor que fez o convite
       <p><label for="convite" class="radio"> Quem foi a pessoa que fez o convite para você da EXPO ?</label></p>
     </div>
-    <!-- colocar a opão para quando alguem colocar a filial aparecer somente o nome dos vendedores da filial-->
+  -->
+
+    <!-- colocar a opção para quando alguem colocar a filial aparecer somente o nome dos vendedores da filial-->
+
+
     <input type="submit" class="button"><!--Botão-->
 
     <div> <!--links e sites-->
       <footer>
-        <a href="https://www.rudegon.com.br/" target="_blank"> Site oficial | </a>
-        <a href="https://cortecloud.com.br/" target="_blank"> Cortecloud | </a>
+        <a href="https://www.rudegon.com.br/" target="_blank"> Site oficial</a> |
+        <a href="https://cortecloud.com.br/" target="_blank"> Cortecloud</a> |
         <a href="https://www.maquinasamc.com.br/" target="_blank"> AMC maquinas</a>
       </footer>
     </div>
   </form>
 </body>
+<!-- apenas os seguimentos de designer e arquiteto pussuem acesso as palestras-->
 
 </html>
