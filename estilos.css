@@ -108,11 +108,12 @@ p {
 .ocupacao input[type=radio] {
     width: 18px;
     height: 20px;
+    cursor: pointer;
 }
 
 .ocupacao label {
     cursor: pointer;
-    unicode-bidi: normal;
+    unicode-bidi: normal;    
 }
 
 .filiais {
