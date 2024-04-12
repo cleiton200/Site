@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: "vagron" ;
-    src: url(Fontes/vagron.TTF);
+    src: url(usadas/vagron.TTF);
 }
 @font-face {
     font-family:"lato-bold" ;
-    src: url(Fontes/Lato-Bold.ttf);
+    src: url(usadas/Lato-Bold.ttf);
 }
 
 body {
