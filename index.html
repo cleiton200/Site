@@ -1,108 +1,193 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-  <title>Formulário</title>
-  <link rel="stylesheet" href="estilos.css">
+@font-face {
+    font-family: "vagron" ;
+    src: url(Fontes/usadas/vagron.TTF);
+}
+@font-face {
+    font-family:"lato-bold" ;
+    src: url(Fontes/usadas/Lato-Bold.ttf);
+}
+body {
+    font-family: "lato-bold";
+    padding: 40px;
+    background-image: url(imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
 
+* {
+    text-align:center;
+}
 
-</head>
+.informacao{
+    font-family: "lato-bold";
+    text-align: right;
+    border: 2px solid white;
+    border-radius: 10px;
+    float: right; 
+}
 
-<body>
+.data{
+    text-align: center;
+    font-family: "vagron";
+    color: yellow;
+}
 
-  <h1 class="textoEsquerdo">40 FORNECEDORES, PALESTRAS,<br>
-    TECNICAS, TREINAMENTOS PRÁTICOS,<BR>
-    NETWORKING E MUITO MAIS!
-  </h1>
+.mensagem{
+    font-size: 10px;
+    text-align: left;
+    color: white;
+}
 
-  <table>
+p {
+    padding: 10px;
+    color: rgba(255, 253, 253, 0.938);
+    font-size: 20px;
+}
+
+ .textoEsquerdo{
+    font-family: "lato-bold";
+    text-align: left;
+    font-size: 15px;
+    color:  rgb(255, 238, 0);
+    float: left;
+}
+
+.radio {
+    text-align: center;
+    border: solid  rgb(255, 238, 0);;
+    border-radius: 25px;
+    padding: 10px;
+    color: rgb(8, 31, 245);
+    background-color: rgb(255, 238, 0);
+    font-size: 20px;
     
+}
 
-  </table>
+.nome {
+    text-align: left;
+    width: 500px;
+    height: 35px;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
 
-  <form action="">
-    <div> <!-- Nome -->
-      <label for="nome" class="radio">Qual é o seu Nome?</label>
-      <p><input type="text" maxlenght="20" class="nome" required placeholder="Carlos jamungar"></p>
-    </div>
+.cnpj {
+    text-align: left;
+    width: 500px;
+    height: 35px;
+    color: rgb(241, 237, 237);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
 
-    <div> <!-- email -->
-      <label for="email" class="radio">Qual é o seu Email?</label>
-      <p><input type="text" maxlenght="30" class="email" required placeholder="Carlosjamungar@gmail.com"></p>
-    </div>
+.email {
+    text-align: left;
+    width: 500px;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
 
-    <div> <!-- CNPJ -->
-      <label for="cnpj" class="radio">Qual é o seu CPF/CNPJ?</label>
-      <p><input type="integer" maxlenght="20" class="cnpj" required placeholder="000000000"></p>
-    </div>
+.ProBlu {
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    background-color: rgba(247, 247, 248, 0.466);
+    display: inline-block;
+    vertical-align: middle; 
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
 
-    <div> <!-- Telefone -->
-      <label for="telefone" class="radio">Qual é o seu telefone?</label>
-      <p><input type="text" maxlenght="30" class="email" required placeholder="(41) 0 0000-0000"></p>
-    </div>
+.ProBlu input[type=radio] {
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    background-color: rgba(247, 247, 248, 0.466);
+}
 
-    <div> <!-- Problu-->
-      <p><label for="Problu" class="radio">Você possui Problu?</label></p>
-      <div class="ProBlu">
-        <input type="radio" name="ProBlu" value="SIM"><strong>SIM</strong>
-        <input type="radio" name="ProBlu" value="NÃO"><strong>NÃO</strong>
-      </div>
-    </div>
+.ocupacao {
+    padding: 10px;
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    background-color: rgba(247, 247, 248, 0.466);
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
 
+.ocupacao div {
+    text-align: left;
+}
 
-    <p><label for="ocupação" class="radio">Qual a sua ocupação?</label></p>
-    <div class="ocupacao">
-      <div>
-        <input type="radio" id="1" name="ocupação" value="Mareceneiro" required>
-        <label for="ocupacao">Mareceneiro</label>
-      </div>
-      <div>
-        <input type="radio" id="2" name="ocupação" value="Designer">
-        <label for="ocupacao">Designer</label>
-      </div>
-      <div>
-        <input type="radio" id="3" name="ocupação" value="Arquiteto">
-        <label for="ocupacao">Arquiteto</label>
-      </div>
-      <div>
-        <input type="radio" id="4" name="ocupação" value="Outros">
-        <label for="ocupacao">outros</label>
-      </div>
-    </div>
+.ocupacao input[type=radio] {
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+}
 
-    <!-- ainda faltou colocar a opção outros mais tenho que pensar como iremos ultilizada-->
+.ocupacao label {
+    cursor: pointer;
+    unicode-bidi: normal;
+}
 
-    <div> <!-- Local de convite-->
-      <p><label for="Local" class="radio">Qual foi o local que foi feito o convite ?</label></p>
-      <select class="filiais" name="ocupacao" id="" required>
-        <option value=" A Mauqina Certa (AMC)"> A Mauqina Certa (AMC)</option>
-        <option value=" Boqueirão" selected> Boqueirão</option>
-        <option value=" Centro de Serviço Rudegon"> Centro de Serviço Rudegon</option>
-        <option value=" Fazenda Rio Grande"> Fazenda Rio Grande</option>
-        <option value=" Rafex"> Rafex</option>
-        <option value=" Santa Felicidade"> Santa Felicidade</option>
-      </select>
-    </div>
+.filiais {
+    text-align: left;
+    width: 500px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
 
-    <!--<div>  Vendedor que fez o convite
-      <p><label for="convite" class="radio"> Quem foi a pessoa que fez o convite para você da EXPO ?</label></p>
-    </div>
-  -->
+a {
+    color: rgb(4%, 10%, );
+    font-size: 18px;
+    background-color: rgba(209, 209, 209, 0.315);
+    text-decoration: none;
+    font-size: 20px;
+}
 
-    <!-- colocar a opção para quando alguem colocar a filial aparecer somente o nome dos vendedores da filial-->
+a:hover{
+    color: rgb(53%, 53%, 54%);
+}
 
+footer{
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 0px;
+    
+}
 
-    <input type="submit" class="button"><!--Botão-->
+.button {
+    width: 200px;
+    border-radius: 50px;
+    padding: 20px;
+    padding-right: 25px;
+    margin: 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
 
-    <div> <!--links e sites-->
-      <footer>
-        <a href="https://www.rudegon.com.br/" target="_blank"> Site oficial</a> |
-        <a href="https://cortecloud.com.br/" target="_blank"> Cortecloud</a> |
-        <a href="https://www.maquinasamc.com.br/" target="_blank"> AMC maquinas</a>
-      </footer>
-    </div>
-  </form>
-</body>
-<!-- apenas os seguimentos de designer e arquiteto pussuem acesso as palestras-->
+.button:hover {
+    background-color: rgb(241, 105, 56);
+}
 
-</html>
+.button:active {
+    background-color: rgb(55, 55, 252);
+}
+
+.text {
+    margin-top: 60px;
+    border: solid rgb(248, 146, 12);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(247, 247, 248, 0.466);
+    font-size: 25px;
+}
