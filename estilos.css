@@ -1,15 +1,14 @@
 
 @font-face {
     font-family: "vagron" ;
-    src: url(usadas/vagron.TTF);
+    src: url(Fontes/usadas/vagron.TTF);
 }
 @font-face {
     font-family:"lato-bold" ;
-    src: url(usadas/Lato-Bold.ttf);
+    src: url(Fontes/usadas/Lato-Bold.ttf);
 }
-
 body {
-    font-family: "vagron";
+    font-family: "lato-bold";
     padding: 40px;
     background-image: url(imagens/fundo.jpg);
     background-repeat: no-repeat;
@@ -19,6 +18,26 @@ body {
 
 * {
     text-align:center;
+}
+
+.informacao{
+    font-family: "lato-bold";
+    text-align: right;
+    border: 2px solid white;
+    border-radius: 10px;
+    float: right; 
+}
+
+.data{
+    text-align: center;
+    font-family: "vagron";
+    color: yellow;
+}
+
+.mensagem{
+    font-size: 10px;
+    text-align: left;
+    color: white;
 }
 
 p {
@@ -31,7 +50,8 @@ p {
     font-family: "lato-bold";
     text-align: left;
     font-size: 15px;
-    color:  rgb(255, 238, 0);;
+    color:  rgb(255, 238, 0);
+    float: left;
 }
 
 .radio {
@@ -113,7 +133,7 @@ p {
 
 .ocupacao label {
     cursor: pointer;
-    unicode-bidi: normal;    
+    unicode-bidi: normal;
 }
 
 .filiais {
